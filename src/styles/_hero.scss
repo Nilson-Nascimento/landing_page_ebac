@@ -39,7 +39,7 @@
         height: 80px;
     }
     
-    @media (max-width: 640px){
+    @media (max-width: variaveis.$mobile){
         padding: 40px 0;
 
         &__logo{

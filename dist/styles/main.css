@@ -69,15 +69,12 @@
 
 @media (width <= 640px) {
   .container {
-    color: red;
     max-width: 80%;
   }
 }
 
-@media (width <= 1024px) {
+@media (width >= 640.01px) and (width <= 1024px) {
   .container {
-    color: #0ff;
-    background-color: #0ff;
     max-width: 90%;
   }
 }

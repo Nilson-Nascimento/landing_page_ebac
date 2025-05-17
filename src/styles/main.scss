@@ -13,14 +13,14 @@
     width: 100%;
     margin: 0 auto;
 
-    @media (max-width: 640px){
+    @media (max-width: variaveis.$mobile){
         max-width: 80%;
-        color: red;
+        // background-color: blue;
+        
     }
 
-    @media (max-width: 1024px){
+    @media (min-width: variaveis.$tablet) and (max-width: 1024px){
         max-width: 90%;
-        background-color: aqua;
-        color: aqua;
+        // background-color: aqua;
     }
 }
