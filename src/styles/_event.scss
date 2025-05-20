@@ -1,0 +1,53 @@
+@use 'variaveis';
+
+.event{
+    display: block;
+    padding: 80px 0;
+    background-image: linear-gradient(#1b6ca7,#442bdb);
+    // background-color: red;
+    
+    .container{
+        display: flex;
+        // flex-direction: row-reverse;
+    }
+
+    &__details{
+        color: variaveis.$textColor-Sec;
+        margin-right: 40px;
+        // background-color: aqua;
+        
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            // background-color: blue;
+            
+        }
+        
+        &__description{
+            line-height: 22px;
+            text-align: justify;
+            background-color: chocolate;
+        }
+    }
+
+    &__image{
+        max-width: 360px;
+    }
+
+    @media (max-width: variaveis.$mobile){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details{
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+@use '../variaveis';
+
+.infos-bar{
+    padding: 16px 24px;
+    background-color: variaveis.$bkgDefault;
+    display: flex;
+    justify-content: space-between;
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            font-size: 14px;
+            color: variaveis.$textColor-Sec;
+            b{
+                font-size: 18px;
+                display: block;
+                color: variaveis.$textColor-Sec;
+            }
+        }
+    }
+
+    @media (max-width: variaveis.$mobile){
+        display: block;
+
+        &__infos{
+            display: block;
+
+            &__item{
+            margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (min-width: variaveis.$tablet) and (max-width: 1024px){
+        &__infos{
+            gap: 16px;
+        }
+    }
+}

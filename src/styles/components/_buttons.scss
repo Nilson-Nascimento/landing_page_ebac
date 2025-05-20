@@ -1,0 +1,28 @@
+@use '../variaveis';
+
+.button{
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    white-space: nowrap;
+
+    &--primary{
+        color:variaveis.$textColor-Default;
+        background-color: variaveis.$bkgBtn;
+    }
+
+    @media (max-width: variaveis.$mobile){
+        display: block;
+        width: 100%;
+        background-color: aqua;
+        text-align: center;
+    }
+
+    @media (min-width: variaveis.$tablet) and (max-width: 1024px){
+        display: flex;
+        align-items: center;
+        background-color: red;
+    }
+}
