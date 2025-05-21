@@ -4,6 +4,9 @@
     display: block;
     padding: 80px 0;
     background-image: linear-gradient(#1b6ca7,#442bdb);
+    border: solid .5px;
+    border-top: none;
+
     // background-color: red;
     
     .container{
@@ -27,7 +30,7 @@
         &__description{
             line-height: 22px;
             text-align: justify;
-            background-color: chocolate;
+            // background-color: chocolate;
         }
     }
 
@@ -50,4 +53,25 @@
         }
     }
 
+}
+
+.event:nth-child(3){
+    background-image: linear-gradient(#442bdb, #8c1b1f);
+    border: none;
+
+    .event__details{
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    .container{
+        flex-direction: row-reverse;
+        
+        
+    }
+
+    @media (max-width: variaveis.$mobile){
+        .event__details{
+        margin-left: 0;
+        }
+    }
 }
