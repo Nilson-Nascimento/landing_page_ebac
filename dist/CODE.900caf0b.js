@@ -1,6 +1,7 @@
 const carregamento = window.onload = function() {
     console.log("Ol\xe1 Parcel");
     console.log(carregamento);
+    AOS.init();
 } // ##############################################################
  // Função para monitorar o carregamento da página
  // function monitorarCarregamento() {

@@ -2,6 +2,8 @@
 const carregamento = window.onload = function(){
     console.log("Olá Parcel")
     console.log(carregamento)
+
+    AOS.init();
     
 }
 

@@ -8,15 +8,43 @@
     border-top: none;
 
     // background-color: red;
+
+    &--frontend{
+        background-image: linear-gradient(variaveis.$blue1, variaveis.$blue2);
+    }
+
+    &--backend{
+        background-image: linear-gradient(variaveis.$blue2, variaveis.$pink);
+    }
+
+    &--ui-ux{
+        background-image: linear-gradient(variaveis.$pink, variaveis.$yellow);
+    }
+
+    &--data-science{
+        background-image: linear-gradient(variaveis.$yellow, variaveis.$pink);
+    }
+
+    &--image-left{
+
+        .event__details{
+            // margin-left: 40px;
+            // margin-right: 0;
+        }
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
     
     .container{
+        gap: 40px;
         display: flex;
         // flex-direction: row-reverse;
     }
 
     &__details{
         color: variaveis.$textColor-Sec;
-        margin-right: 40px;
+        // margin-right: 40px;
         // background-color: aqua;
         
         &__title{
@@ -55,23 +83,23 @@
 
 }
 
-.event:nth-child(3){
-    background-image: linear-gradient(#442bdb, #8c1b1f);
-    border: none;
+// .event:nth-child(3), .event:nth-child(5){
+//     // background-image: linear-gradient(#442bdb, #8c1b1f);
+//     border: none;
 
-    .event__details{
-        margin-left: 40px;
-        margin-right: 0;
-    }
-    .container{
-        flex-direction: row-reverse;
+//     .event__details{
+//         margin-left: 40px;
+//         margin-right: 0;
+//     }
+//     .container{
+//         flex-direction: row-reverse;
         
         
-    }
+//     }
 
-    @media (max-width: variaveis.$mobile){
-        .event__details{
-        margin-left: 0;
-        }
-    }
-}
+//     @media (max-width: variaveis.$mobile){
+//         .event__details{
+//         margin-left: 0;
+//         }
+//     }
+// }
