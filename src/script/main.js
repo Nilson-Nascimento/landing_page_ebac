@@ -8,7 +8,7 @@ const carregamento = window.onload = function(){
     
 }
 const stop = '00:00:00'
-const timeEvent = new Date("Mon May 28 2025 22:47:26")
+const timeEvent = new Date("Mon Dec 28 2025 22:47:26")
 const timeStampEvent = timeEvent.getTime()
 // console.log(timeStampEvent + " timeStampEvent")
 
